@@ -36,9 +36,10 @@ a:hover{	background-color: #dc322f;
 <body>
 <center>
 <a href = "https://www.lycos.com/" class = "white"><img src = "img/home.png" height = "50px"></a>&nbsp; 
-<a href = "data/" >data</a>&nbsp; 
-<a href = "files/" >files</a>&nbsp; 
-<a href = "http://tritech.io:8000" >python http 8000 </a>
+<a href = "data/" class = "white">data</a>&nbsp; 
+<a href = "files/" class = "white">files</a>&nbsp; 
+<a href = "http://tritech.io:8000" class = "white">python http 8000 </a>
+<br />
 <br />
 <a href = "http://10.tritech.io" target ="_blank">10</a>&nbsp;
 <a href = "http://1108.tritech.io" target ="_blank">1108</a>&nbsp;
