@@ -1,5 +1,4 @@
 <a href = "http://10.ritech.io" target ="_blank">10</a>&nbsp;
-<a href = "http://10.ritech.io" target ="_blank">10</a>&nbsp;
 <a href = "http://1108.ritech.io" target ="_blank">1108</a>&nbsp;
 <a href = "http://792.ritech.io" target ="_blank">792</a>&nbsp;
 <a href = "http://7.ritech.io" target ="_blank">7</a>&nbsp;
