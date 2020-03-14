@@ -1,0 +1,9 @@
+# Save this as a .gitignore at the root of your repo
+*.dll
+*.exe
+*.o
+*.so
+
+# Logs and databases #
+######################
+*.pcap
