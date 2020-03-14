@@ -15,7 +15,7 @@ a{ 	background-color:#ff0000 ;
 	text-decoration:none;
 	border: solid 1px;
 	border-radius: 5px;
-	padding : 2px;
+	padding : 1px;
 	
 }
 
@@ -26,6 +26,10 @@ a:hover{	background-color: #dc322f;
 .white{
 	background-color: #fff;
 	color: #000;
+	text-decoration:none;
+	border: solid 1px;
+	border-radius: 5px;
+	padding : 1px;
 }
 .white:hover{
 	background-color: #fff;
@@ -64,7 +68,7 @@ a:hover{	background-color: #dc322f;
 <a href = "http://457.tritech.io" target ="_blank">457</a>&nbsp;
 <a href = "http://5.tritech.io" target ="_blank">5</a>&nbsp;
 <a href = "http://101.tritech.io" target ="_blank">101</a>&nbsp;
-<br />
+<br /><br /><br />
 <img src = "img/caz.png" height = "200px">
 </center>
 <hr />
