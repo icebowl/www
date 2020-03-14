@@ -1,6 +1,6 @@
 def string_concat(a):
     b = "<a href = "+'"'+"http://"
-    b = b + a + ".ritech.io"
+    b = b + a + ".tritech.io"
     b = b +'"' + " target ="+ '"'+"_blank"+'"'+">"+a+"</a>&nbsp;"
     return b
 
