@@ -2,7 +2,8 @@
 <style>
 body{font-family: system-ui, sans-serif;}
 html{font-family: system-ui, sans-serif;}
-  
+
+
 pre{ 
   background-color: #ddd; color: #000;
   border: solid 1px; border-radius: 20px; padding : 10px;
@@ -18,14 +19,23 @@ a{ 	background-color:#ff0000 ;
 	
 }
 
-a:hover{	background-color: #dc322f; ;
+a:hover{	background-color: #dc322f;
 		color:  #fdf6e3; ;
 		text-decoration:none;
 }
+.white{
+	background-color: #fff;
+	color: #000;
+}
+.white:hover{
+	background-color: #fff;
+	color: #000;
+}
+
 </style>
 <body>
 <center>
-<a href = "https://www.lycos.com/" ><img src = "img/home.png"></a>&nbsp; 
+<a href = "https://www.lycos.com/" class = "white"><img src = "img/home.png" height = "50px"></a>&nbsp; 
 <a href = "data/" >data</a>&nbsp; 
 <a href = "files/" >files</a>&nbsp; 
 <a href = "http://tritech.io:8000" >python http 8000 </a>
