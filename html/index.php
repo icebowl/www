@@ -25,6 +25,7 @@ a:hover{	background-color: #dc322f; ;
 </style>
 <body>
 <center>
+<a href = "https://www.lycos.com/" ><img src = "img/home.png"></a>&nbsp; 
 <a href = "data/" >data</a>&nbsp; 
 <a href = "files/" >files</a>&nbsp; 
 <a href = "http://tritech.io:8000" >python http 8000 </a>
@@ -52,6 +53,7 @@ a:hover{	background-color: #dc322f; ;
 <a href = "http://457.tritech.io" target ="_blank">457</a>&nbsp;
 <a href = "http://5.tritech.io" target ="_blank">5</a>&nbsp;
 <a href = "http://101.tritech.io" target ="_blank">101</a>&nbsp;
+<br />
 <img src = "img/caz.png" height = "200px">
 </center>
 <hr />
