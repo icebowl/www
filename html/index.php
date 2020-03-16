@@ -1,7 +1,7 @@
-<html><head><title>######.tritech.io</title></head>
+<html><head><title>####.tritech.io</title></head>
 <style>
-body{font-family: system-ui, sans-serif;}
-html{font-family: system-ui, sans-serif;}
+body{font-family: system-ui, sans-serif; font-size: 20px;  background-color:505050;}
+html{font-family: system-ui, sans-serif; font-size: 20px;}
 
 
 pre{ 
@@ -9,25 +9,25 @@ pre{
   border: solid 1px; border-radius: 20px; padding : 10px;
 }
 
-a{ 	background-color:#ff0000 ;
+a{ 	background-color:#ae4847;
 	color: #fff;
-	font-size:20px;
 	text-decoration:none;
-	border: solid 1px;
+	border: solid 2px;
 	border-radius: 5px;
+	border-color: 000;
 	padding : 1px;
 	
 }
 
-a:hover{	background-color: #dc322f;
-		color:  #fdf6e3; ;
+a:hover{	background-color: #000;
+		color:  #ddd ;
 		text-decoration:none;
 }
 .white{
 	background-color: #fff;
 	color: #000;
 	text-decoration:none;
-	border: solid 1px;
+	border: solid 2px;
 	border-radius: 5px;
 	padding : 1px;
 }
@@ -36,13 +36,26 @@ a:hover{	background-color: #dc322f;
 	color: #000;
 }
 
+.noborder{
+	background-color: transparent ;
+	text-decoration:none;
+	border: none;
+}
+
+.noborder:hover{
+	background-color:transparent ;
+	text-decoration:none;
+	 opacity: 0.5;
+}
+
 </style>
 <body>
 <center>
-<a href = "https://www.lycos.com/" class = "white"><img src = "img/home.png" height = "50px"></a>&nbsp; 
+<a href = "https://www.lycos.com/" class = "noborder"><img src = "img/home.png" height = "50px"></a>&nbsp; 
 <a href = "data/" class = "white">data</a>&nbsp; 
 <a href = "files/" class = "white">files</a>&nbsp; 
 <a href = "http://tritech.io:8000" class = "white">python http 8000 </a>
+<a href = "admin/" target = "_blank" class = "white">ADMINISTRATION</a>
 <br />
 <br />
 <a href = "http://10.tritech.io" target ="_blank">10</a>&nbsp;
@@ -93,6 +106,22 @@ IndexOptions FancyIndexing FoldersFirst NameWidth=* DescriptionWidth=*
 
 
 </pre>
+
+
+<div style="background-color:#ae4847; color:white;padding:1px;">#ae4847</div>
+<div style="background-color:#de965d; color:white;padding:1px;">#de965d</div>
+<div style="background-color:#f9ca8c; color:white;padding:1px;">#B3B350</div>
+<div style="background-color:#9db570; color:white;padding:1px;">#9db570</div>
+<div style="background-color:#80c0b7; color:white;padding:1px;">#80c0b7</div>
+<div style="background-color:#77adbf; color:white;padding:1px;">#77adbf</div>
+<div style="background-color:#bb89ac; color:white;padding:1px;">#bb89ac</div>
+<div style="background-color:#a2694b; color:white;padding:1px;">#a2694b</div>
+<hr />
+<div style="background-color:#505050; color:white;padding:1px;">#505050;</div>
+<div style="background-color:#B3B3B3; color:black;padding:1px;">#B3B3B3;</div>
+<div style="background-color:#FDF6E3; color:black;padding:1px;">#FDF6E3;</div>
+<div style="background-color:#FFEDBF; color:black;padding:1px;">#FFEDBF;</div>
+<div style="background-color:#000000; color:white;padding:1px;">#000000;</div>
 </body>
 </html>
 
