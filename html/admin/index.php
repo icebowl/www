@@ -22,7 +22,8 @@ a:hover{color:  #fdf6e3; ;text-decoration:none;}
 <a href = "index.php?v=0" class = "menu" >python3 server 8000 nohup</a>&nbsp; 
 <a href = "index.php?v=2" class = "menu" >pkill python3</a>&nbsp;
 <a href = "index.php?v=3" class = "menu" >tcpdump</a>&nbsp;
-<a href = "index.php?v=4" class = "menu" >tree web</a>&nbsp;
+<a href = "index.php?v=4" class = "menu" >tcpdump no dev null</a>&nbsp;
+<a href = "index.php?v=5" class = "menu" >tree web</a>&nbsp;
 <hr />
 
 <?php
@@ -60,15 +61,31 @@ if ($thepost == 2) {
 
 if ($thepost == 3) {
          echo "OUTPUT - ";
-		//$command = 'nohup tcpdump -w $(date +"%Y%m%d-%H%M%S").pcap -i enp2s0  >> /dev/null 2>&1 & ';
+		//$command = 'tcpdump -w $(date +"%Y%m%d-%H%M%S").pcap -i enp2s0 ';
+		$command = 'sh /home/cwc/http/www/html/admin/tcpdmp.sh';
 		//echo "$command";
       //$output = shell_exec($command);
       //$output = shell_exec('tcpdump -w $(date +\"%Y%m%d-%H%M%S\").pcap -i enp2s0');   
-         shell_exec('nohup tcpdump -w $(date +"%Y%m%d-%H%M%S").pcap -i enp2s0  >> /dev/null 2>&1 &');
-        //echo "<pre>$output</pre>";
+         #shell_exec('nohup tcpdump -w $(date +"%Y%m%d-%H%M%S").pcap -i enp2s0  >> /dev/null 2>&1 &');
+    $output = shell_exec('$command');
+      echo "<pre> - $output - </pre>";
 }
 
 if ($thepost == 4) {
+         echo "OUTPUT - ";
+		//$command = 'tcpdump -w $(date +"%Y%m%d-%H%M%S").pcap -i enp2s0 ';
+		$command = 'sh /home/cwc/http/www/html/admin/tcpd.sh';
+		//echo "$command";
+      //$output = shell_exec($command);
+      //$output = shell_exec('tcpdump -w $(date +\"%Y%m%d-%H%M%S\").pcap -i enp2s0');   
+         #shell_exec('nohup tcpdump -w $(date +"%Y%m%d-%H%M%S").pcap -i enp2s0  >> /dev/null 2>&1 &');
+    $output = shell_exec('$command');
+      echo "<pre> - $output - </pre>";
+}
+
+
+
+if ($thepost == 5) {
         $output = shell_exec('tree web');
          echo "OUTPUT";
         echo "<pre>$output</pre>";
