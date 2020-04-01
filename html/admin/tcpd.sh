@@ -1,5 +1,5 @@
 #!/bin/bash
-cd  /home/cwc/http/www/html/admin/web/
+cd  /home/cwc/http/www/html/admin/
 nowfile=$(date +"%Y%m%d-%H%M%S")
 tcpdump -w $nowfile.pcap -i enp2s0 
 #now=$(date +"%Y%m%d-%H%M%S")

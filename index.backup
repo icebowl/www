@@ -1,0 +1,128 @@
+<html><head><title>admin</title></head>
+<style>
+body{font-family: system-ui, sans-serif; background-color:#a2694b ; color:#fff;}
+
+pre{background-color: ##a2694b;color: #fff;
+	font-family: system-ui , sans-serif;border: solid 1px;border-radius: 20px;padding : 10px;}
+a{
+	background-color:#505050 ;
+	color: #fff;
+	text-decoration:none;
+	border: solid 2px;
+	border-color: 000;
+	padding : 1px;}
+	
+a:hover{color:  #fdf6e3; ;text-decoration:none;}
+
+
+</style>
+<body>
+<center>
+<a href = "index.php?v=0" class = "menu" >python3 server 8000 nohup</a>&nbsp; 
+<a href = "index.php?v=1" class = "menu" >ps</a>&nbsp;
+<a href = "index.php?v=2" class = "menu" >pkill python3</a>&nbsp;
+<a href = "index.php?v=3" class = "menu" >tcpdump</a>&nbsp;
+<a href = "index.php?v=4" class = "menu" >tcptxt path  </a>&nbsp;
+<a href = "index.php?v=5" class = "menu" >5 a test</a>&nbsp;
+<a href = "index.php?v=6" class = "menu" >ls -l</a>&nbsp;
+<a href = "index.php?v=7" class = "menu" >tree web</a>&nbsp;
+<hr />
+
+<?php
+
+
+// Default page
+if (isset($_GET['v'])) {
+	$thepost = $_GET['v']; 
+	} else {
+		$thepost = -1;
+	}
+	
+if ($thepost == -1) {
+	$output = shell_exec('cal');
+	 echo "<pre>OUTPUT<br />";
+	echo "$output";
+	echo"</pre>";
+}
+if ($thepost == 0) {
+	$output = shell_exec('cd data; nohup python3 -m http.server 8000 >> /dev/null 2>&1 &');
+	echo "<pre>OUTPUT<br />";
+	echo "$output";
+	echo"</pre>";
+}
+
+if ($thepost == 1) {
+	$output = shell_exec('ps');
+	 echo "OUTPUT";
+	echo "<pre>$output</pre>";
+}
+if ($thepost == 2) {
+        $output = shell_exec('pkill  python3');
+	 echo "OUTPUT";
+        echo "<pre>$output</pre>";
+}
+
+if ($thepost == 3) {
+         echo "OUTPUT - ";
+		//$command = 'tcpdump -w $(date +"%Y%m%d-%H%M%S").pcap -i enp2s0 ';
+		$command = 'sh /home/cwc/http/www/html/admin/tcpdmp.sh';
+		//echo "$command";
+      //$output = shell_exec($command);
+      //$output = shell_exec('tcpdump -w $(date +\"%Y%m%d-%H%M%S\").pcap -i enp2s0');   
+         #shell_exec('nohup tcpdump -w $(date +"%Y%m%d-%H%M%S").pcap -i enp2s0  >> /dev/null 2>&1 &');
+    $output = shell_exec('$command');
+      echo "<pre> - $output - </pre>";
+}
+
+if ($thepost == 4) {
+         echo "<pre>tcpdmp-txt.sh <br />";
+         $dpath = getcwd();
+		echo "path ".$dpath."/tpd-txt.sh";	
+		$m=shell_exec($dpath."/tpd-txt.sh");
+		echo  "<hr />m $m" ;
+		//print_r($message);
+		$output = shell_exec($m);
+		echo "</pre>";
+      echo "<pre> *** $output *** </pre>";
+}
+
+if ($thepost == 5) {
+         echo "<pre>\\OUTPUT - - <br />";
+         $dpath = getcwd();
+		echo "path ".$dpath."/a.sh";	
+		$m=shell_exec($dpath."/a.sh");
+		echo  "<hr />m $m" ;
+		//print_r($message);
+		$output = shell_exec($m);
+		echo "</pre>";
+      echo "<pre> *** $m *** </pre>";
+}
+
+if ($thepost == 6) {
+        $output = shell_exec('ls -l');
+         echo "OUTPUT";
+        echo "<pre>$output</pre>";
+}
+if ($thepost == 7) {
+        $output = shell_exec('tree web');
+         echo "OUTPUT";
+        echo "<pre>$output</pre>";
+}
+
+?>
+
+<hr />
+<pre>
+ae4847
+de965d
+f9ca8c
+9db570
+80c0b7
+77adbf
+bb89ac
+a2694b
+
+</pre>
+
+</body>
+</html>
